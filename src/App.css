@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+    --font-Regular: "Roboto-Regular";
+    --font-Bold: "Roboto-Bold";
+    --Tomato: hsl(4, 100%, 67%);
+    --Tomato-light: hsl(4, 100%, 87%);
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(0, 0%, 62%);
+    --White: hsl(0, 0%, 100%);
+
+    --fs-10: 0.625rem;
+    --fs-12: 0.75rem;
+    --fs-14: 0.875rem;
+    --fs-16: 1rem;
+    --fs-18: 1.125rem;
+    --fs-20: 1.25rem;
+    --fs-24: 1.5rem;
+    --fs-28: 1.75rem;
+    --fs-32: 2rem;
+    --fs-36: 2.25rem;
+    --fs-40: 2.5rem;
+    --fs-42: 2.625rem;
+    --fs-46: 2.8rem;
+    --fs-54: 3.375rem;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Rubik", sans-serif;
+}
+
+header {
+    text-align: center;
+    position: relative;
+    height: 27vh;
+}
+
+header h1 {
+    color: var(--White);
+    font-size: var(--fs-46);
+    font-weight: 600;
+    padding: 32px 0 16px 0;
+}
+
+header input {
+    width: 40%;
+    font-size: var(--fs-28);
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    padding: 13px 20px;
+    border: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 140px;
+}
+
+header input:focus {
+    outline: 0;
+}
+
+header button {
+    padding: 16px 20px;
+    border: 0;
+    background-color: #333;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: #4f4f4f;
+}
+
+.info-field {
+    z-index: 1;
+    position: absolute;
+    bottom: -33%;
+    left: 10%;
+    display: flex;
+    justify-content: left;
+    gap: 10%;
+    font-size: var(--fs-36);
+    margin-top: 30px auto;
+    background-color: rgb(255, 255, 255);
+    padding: 40px 120px 40px 40px;
+    width: 80%;
+    box-shadow: 0px 12px 10px rgba(7, 7, 7, 0.144);
+    border-radius: 12px;
+    padding: 56px 32px;
+}
+
+.bloc-2,
+.bloc-3,
+.bloc-4 {
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-field h3 {
+    font-size: var(--fs-24);
+    display: flex;
+    color: var(--Grey);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.info-field p {
+    font-size: var(--fs-32);
+    color: var(--Dark-Slate-Grey);
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    display: flex;
+}
+
+/* Loader, error */
+.state {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 73vh;
+    font-size: var(--fs-46);
+}
+
+/* Map container */
+.leaflet-container {
+    z-index: 0;
+    height: 73vh;
+}
+
+@media screen and (max-width: 810px) {
+    header input {
+        width: 60%;
+    }
+    .info-field {
+        bottom: -30%;
+        left: 2%;
+        width: 96%;
+        gap: 0;
+        padding: 30px;
+    }
+    .bloc-2,
+    .bloc-3,
+    .bloc-4 {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    header h1 {
+        font-size: var(--fs-32);
+        padding: 22px;
+    }
+
+    header input {
+        font-size: var(--fs-28);
+        width: 80%;
+    }
+    header button {
+        padding: 17px 16px;
+    }
+    .info-field {
+        flex-direction: column;
+        bottom: -60%;
+        left: 4%;
+        width: 92%;
+        padding: 18px 30px;
+    }
+
+    .info-field h3 {
+        font-size: var(--fs-14);
+        margin-bottom: 4px;
+    }
+    .info-field p {
+        font-size: var(--fs-20);
+        margin-bottom: 18px;
+    }
+
+    .bloc-2,
+    .bloc-3,
+    .bloc-4 {
+        border-left: 0;
+        padding: 0;
+        margin-left: 0;
+    }
+    .state {
+        text-align: center;
+        height: 73vh;
+        font-size: var(--fs-46);
+    }
+}
