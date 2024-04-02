@@ -177,7 +177,7 @@ header button:hover {
     }
     .info-field {
         flex-direction: column;
-        bottom: -100%;
+        bottom: -60%;
         left: 4%;
         width: 92%;
         padding: 18px 30px;
@@ -201,7 +201,7 @@ header button:hover {
     }
     .state {
         text-align: center;
-        height: 73vh;
+        height: 60vh;
         font-size: var(--fs-46);
     }
     .leaflet-container {
