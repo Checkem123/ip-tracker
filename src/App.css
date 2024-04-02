@@ -160,6 +160,9 @@ header button:hover {
 }
 
 @media screen and (max-width: 428px) {
+    header {
+        height: 40vh;
+    }
     header h1 {
         font-size: var(--fs-32);
         padding: 22px;
@@ -174,7 +177,7 @@ header button:hover {
     }
     .info-field {
         flex-direction: column;
-        bottom: -60%;
+        bottom: -10%;
         left: 4%;
         width: 92%;
         padding: 18px 30px;
@@ -200,5 +203,8 @@ header button:hover {
         text-align: center;
         height: 73vh;
         font-size: var(--fs-46);
+    }
+    .leaflet-container {
+        height: 60vh;
     }
 }
