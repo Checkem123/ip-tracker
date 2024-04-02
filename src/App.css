@@ -159,7 +159,7 @@ header button:hover {
     }
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 568px) {
     header {
         height: 40vh;
     }
