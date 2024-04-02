@@ -177,7 +177,7 @@ header button:hover {
     }
     .info-field {
         flex-direction: column;
-        bottom: -10%;
+        bottom: -100%;
         left: 4%;
         width: 92%;
         padding: 18px 30px;
