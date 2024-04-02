@@ -174,18 +174,18 @@ header button:hover {
     }
     .info-field {
         flex-direction: column;
-        bottom: -40%;
+        bottom: -50%;
         left: 4%;
         width: 92%;
         padding: 18px 30px;
     }
 
     .info-field h3 {
-        font-size: var(--fs-14);
+        font-size: var(--fs-10);
         margin-bottom: 4px;
     }
     .info-field p {
-        font-size: var(--fs-20);
+        font-size: var(--fs-16);
         margin-bottom: 8px;
     }
 
